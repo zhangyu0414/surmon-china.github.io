@@ -31,6 +31,13 @@
  */
 
 /*!
+ * vue-awesome-swiper v4.1.0
+ * Copyright (c) Surmon. All rights reserved.
+ * Released under the MIT License.
+ * Surmon <https://github.com/surmon-china>
+ */
+
+/*!
  * vue-client-only v2.0.0
  * (c) 2019-present egoist <0x142857@gmail.com>
  * Released under the MIT License.
@@ -58,13 +65,6 @@ and limitations under the License.
 ***************************************************************************** */
 
 /*! VueGoogleAdsense v1.8.1 by Irfan Maulana <github.com/mazipan> */
-
-/**
- * @file vue-awesome-swiper v4.0.2
- * @copyright Copyright (c) Surmon. All rights reserved.
- * @license Released under the MIT License.
- * @author Surmon <https://github.com/surmon-china>
- */
 
 /**
  * vuex v3.1.3
