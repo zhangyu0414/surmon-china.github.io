@@ -2,10 +2,8 @@ module.exports = {
   universal: false,
   clientEntry: './src/main.ts',
   template: './src/app.html',
-  inspect: true,
   prerender: {
     fallback: true,
-    // fallback: '404.html',
     routes: [
       '/',
       // '/naivebayes',

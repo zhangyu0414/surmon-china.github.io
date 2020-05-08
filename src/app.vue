@@ -4,14 +4,14 @@
       name="fade"
       mode="out-in"
     >
-      <Suspense>
+      <suspense>
         <template #default>
           <router-view />
         </template>
         <template #fallback>
           Loading...
         </template>
-      </Suspense>
+      </suspense>
     </transition>
   </div>
 </template>
