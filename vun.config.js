@@ -6,6 +6,7 @@ module.exports = {
     fallback: true,
     routes: [
       '/',
+      '/vuniversal',
       // '/naivebayes',
       // '/vue-awesome-swiper',
       // '/vue-quill-editor',
@@ -20,14 +21,15 @@ module.exports = {
       styleResources: {
         scss: ['./src/assets/styles/init.scss']
       }
+    },
+    loaders: {
+      vue: {
+        exposeFilename: true
+      }
     }
   },
-  webpack() {
+  webpack(webpackConfig, buildContext) {
     // MARK: Just run in test
     // config.resolve.alias['vue-awesome-swiper'] = path.join(__dirname, 'development', 'vue-awesome-swiper', 'src')
-    // if (isClient) {
-      // https://vue-loader.vuejs.org/zh/options.html#exposefilename
-      // vue.exposeFilename = true
-    // }
   }
 }

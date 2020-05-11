@@ -1,15 +1,19 @@
 <template>
   <div class="mobile">
-    <swiper class="swiper" :options="swiperOption" class="my-swiper" ref="mySwiper">
+    <swiper ref="mySwiper" :options="swiperOption" class="my-swiper">
       <swiper-slide
-        v-for="(banner, index) in banners" 
+        v-for="(banner, index) in banners"
+        :key="index" 
         :class="{ 
           'swiper-footer': Object.is(index, 3) 
-        }">
+        }"
+      >
         <!-- <span>{{ index }}</span> -->
         <img :src="banner.image" :class="{ 'swiper-no-swiping': Object.is(index, 3) }">
       </swiper-slide>
-      <div class="swiper-pagination" slot="pagination"></div>
+      <template #pagination>
+        <div class="swiper-pagination" />
+      </template>
     </swiper>
   </div>
 </template>

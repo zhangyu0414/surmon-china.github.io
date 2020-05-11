@@ -1,6 +1,6 @@
 <template>
   <homepage :repositorie-id="repositorieId" :class="repositorieId">
-    <template slot="actions">
+    <template #actions>
       <homepage-link
         icon="doc"
         text="CodeMirror User manual"
@@ -17,7 +17,7 @@
         href="https://codemirror.net/mode/"
       />
     </template>
-    <template slot="content">
+    <template #content>
       <homepage-examples example-class="codemirror-example" :examples="examples" />
     </template>
   </homepage>

@@ -7,7 +7,7 @@
 // style
 import 'highlight.js/styles/github.css'
 
-const Hljs = require('highlight.js/lib/highlight')
+const Hljs = require('highlight.js/lib/core')
 Hljs.registerLanguage('go', require('highlight.js/lib/languages/go'))
 Hljs.registerLanguage('css', require('highlight.js/lib/languages/css'))
 Hljs.registerLanguage('sql', require('highlight.js/lib/languages/sql'))

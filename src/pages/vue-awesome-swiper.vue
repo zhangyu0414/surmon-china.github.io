@@ -1,6 +1,6 @@
 <template>
   <homepage :repositorie-id="repositorieId" :class="repositorieId">
-    <template slot="actions">
+    <template #actions>
       <homepage-link
         icon="doc"
         text="Swiper 5/4 API Document (ZH)"
@@ -22,7 +22,7 @@
         href="https://github.com/surmon-china/surmon-china.github.io/tree/source/projects/vue-awesome-swiper/nuxt"
       />
     </template>
-    <template slot="content">
+    <template #content>
       <homepage-examples example-class="swiper-example" :examples="examples" />
     </template>
   </homepage>

@@ -5,19 +5,19 @@
     :description="description"
     class="vue-video-player"
   >
-    <template slot="actions">
+    <template #actions>
       <homepage-link
         icon="doc"
         text="Video.js Documentation"
         href="https://docs.videojs.com/"
       />
     </template>
-    <template slot="content">
+    <template #content>
       <homepage-example-card
-        :data="example"
+        v-for="example in examples"
         :key="example.name"
-        :title="example.name"
-        v-for="example in examples" 
+        :data="example"
+        :title="example.name" 
       >
         <component :is="example.name" />
       </homepage-example-card>
@@ -27,7 +27,7 @@
 
 <script lang="ts">
   import { defineComponent } from 'vue'
-  import { transformComponentsToNormalMaterial, getHomePageHeadMeta } from '@/transforms/example'
+  import { transformComponentsToNormalMaterial, getHomePageHeadMeta } from '@/transformers/page-meta'
   import Homepage from '@/components/homepage/index.vue'
   import HomepageLink from '@/components/homepage/link.vue'
   import HomepageExampleCard from '@/components/homepage/cards/example.vue'

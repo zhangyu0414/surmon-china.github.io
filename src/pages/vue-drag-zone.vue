@@ -1,6 +1,6 @@
 <template>
   <homepage :repositorie-id="repositorieId" :class="repositorieId">
-    <homepage-examples :examples="examples" slot="content" />
+    <homepage-examples #content :examples="examples" />
   </homepage>
 </template>
 

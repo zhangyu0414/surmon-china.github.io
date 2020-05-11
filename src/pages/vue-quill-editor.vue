@@ -1,6 +1,6 @@
 <template>
   <homepage :repositorie-id="repositorieId" :class="repositorieId">
-    <template slot="actions">
+    <template #actions>
       <homepage-link
         icon="doc"
         text="Quill Quickstart"
@@ -27,7 +27,7 @@
         href="https://github.com/surmon-china/surmon-china.github.io/tree/source/projects/vue-quill-editor/nuxt"
       />
     </template>
-    <template slot="content">
+    <template #content>
       <homepage-examples
         example-class="quill-example"
         content-class="quill-example-content"

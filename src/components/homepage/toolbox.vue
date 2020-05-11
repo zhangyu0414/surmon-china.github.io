@@ -8,7 +8,7 @@
           target="_blank"
           :href="githubUserUrl"
         >
-          <i class="iconfont icon-github"></i>
+          <i class="iconfont icon-github" />
         </a>
         <a
           class="item experiment"
@@ -16,7 +16,7 @@
           title="to projects page"
           href="/"
         >
-          <i class="iconfont icon-experiment"></i>
+          <i class="iconfont icon-experiment" />
         </a>
         <a
           v-if="email"
@@ -24,7 +24,7 @@
           :href="`mailto:${email}`"
           target="_blank"
         >
-          <i class="iconfont icon-mail"></i>
+          <i class="iconfont icon-mail" />
         </a>
         <button
           class="item to-page-top"
@@ -32,7 +32,7 @@
           @mouseover="setTopButtonState(true, true)"
           @mouseleave="setTopButtonState(false)"
         >
-          <i class="iconfont icon-arrow-up"></i>
+          <i class="iconfont icon-arrow-up" />
         </button>
         <button
           class="item to-page-bottom"
@@ -40,7 +40,7 @@
           @mouseover="setBottomButtonState(true, true)"
           @mouseleave="setBottomButtonState(false)"
         >
-          <i class="iconfont icon-arrow-down"></i>
+          <i class="iconfont icon-arrow-down" />
         </button>
       </div>
     </div>

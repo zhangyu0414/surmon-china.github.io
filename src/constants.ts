@@ -17,6 +17,7 @@ export const GITHUB_FOLLOWERS_URL = getFollowersUrl(GITHUB_UID)
 export const GITHUB_SPONSORS_URL = getSponsorsUrl(GITHUB_UID)
 
 export enum GITHUB_REPOSITORIEL_IDS {
+  Vuniversal = 'vuniversal',
   Naivebayes = 'naivebayes',
   VueAwesomeSwiper = 'vue-awesome-swiper',
   VueQuillEditor = 'vue-quill-editor',

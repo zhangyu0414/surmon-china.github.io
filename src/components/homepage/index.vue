@@ -466,6 +466,14 @@
                     margin-right: $xs-gap;
                   }
 
+                  .meta {
+                    margin-left: $xs-gap;
+
+                    .iconfont {
+                      margin-right: 2px;
+                    }
+                  }
+
                   .meta,
                   .iconfont {
                     font-size: $font-size-small;
