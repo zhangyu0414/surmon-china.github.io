@@ -6,22 +6,22 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'Index',
-    component: async () => import('./pages/index.vue')
+    component: async () => import(/* webpackChunkName: 'index' */ './pages/index.vue')
   },
   {
     path: `/${GITHUB_REPOSITORIEL_IDS.Vuniversal}`,
     name: GITHUB_REPOSITORIEL_IDS.Vuniversal,
-    component: async () => import('./pages/vuniversal.vue')
+    component: async () => import(/* webpackChunkName: 'vuniversal' */ './pages/vuniversal.vue')
   },
   {
     path: `/${GITHUB_REPOSITORIEL_IDS.Naivebayes}`,
     name: GITHUB_REPOSITORIEL_IDS.Naivebayes,
-    component: async () => import('./pages/naivebayes.vue')
+    component: async () => import(/* webpackChunkName: 'naivebayes' */ './pages/naivebayes.vue')
   },
   {
     path: `/${GITHUB_REPOSITORIEL_IDS.VueTouchRipple}`,
     name: GITHUB_REPOSITORIEL_IDS.VueTouchRipple,
-    component: async () => import('./pages/vue-touch-ripple.vue')
+    component: async () => import(/* webpackChunkName: 'vue-touch-ripple' */ './pages/vue-touch-ripple.vue')
   },
   {
     name: NotFound.name,

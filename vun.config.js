@@ -18,6 +18,7 @@ module.exports = {
   },
   build: {
     css: {
+      sourceMap: true,
       styleResources: {
         scss: ['./src/assets/styles/init.scss']
       }

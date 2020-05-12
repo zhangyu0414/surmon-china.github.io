@@ -123,9 +123,8 @@
         new Promise((resolve, reject) => {
           window.segmentit
             ? resolve(window.segmentit)
-            : reject()
+            : import(/* webpackChunkName: 'segmentit' */'segmentit')
         })
-        .catch(() => import('segmentit'))
         .then(segmentit => {
           window.segmentit = segmentit
           const { Segment, useDefault } = segmentit
