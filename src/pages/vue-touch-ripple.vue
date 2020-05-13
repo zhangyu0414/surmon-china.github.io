@@ -18,7 +18,7 @@
   import { GITHUB_REPOSITORIEL_IDS } from '@/constants'
   import { getComponentExampleMeta, getHomePageHeadMeta } from '@/transformers/page-meta'
   import HomepageExamples, { IExample } from '@/components/homepage/examples.vue'
-  import Homepage from '@/components/homepage/index.vue'
+  import Homepage from '@/components/homepage/index.async'
   import { touchRipple } from 'vue-touch-ripple'
 
   const repositorieId = GITHUB_REPOSITORIEL_IDS.VueTouchRipple

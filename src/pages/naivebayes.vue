@@ -22,7 +22,7 @@
   import { MammonProvider } from '@/components/mammon/index.vue'
   import { IExample } from '@/components/homepage/examples.vue'
   import HomepageExampleCard from '@/components/homepage/card-example.vue'
-  import Homepage from '@/components/homepage/index.vue'
+  import Homepage from '@/components/homepage/index.async'
 
   const repositorieId = GITHUB_REPOSITORIEL_IDS.Naivebayes
   const examples: IExample[] = []

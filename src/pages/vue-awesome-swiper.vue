@@ -34,7 +34,7 @@
   import { GITHUB_REPOSITORIEL_IDS } from '@/constants'
   import HomepageExamples, { IExample } from '@/components/homepage/examples.vue'
   import HomepageLink from '@/components/homepage/link.vue'
-  import Homepage from '@/components/homepage/index.vue'
+  import Homepage from '@/components/homepage/index.async'
 
   const repositorieId = GITHUB_REPOSITORIEL_IDS.VueAwesomeSwiper
   const examples: IExample[] = []

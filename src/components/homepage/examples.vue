@@ -36,7 +36,7 @@
   import Mammon, { MammonProvider, cnMammonProviders, gaMammonProviders } from '@/components/mammon/index.vue'
   import HomepageExampleCard from './card-example.vue'
   import HomepageBasicCard from './card-basic.vue'
-  import Loading from './loading.vue'
+  import Loading from '../layout/loading.vue'
   import { useStore } from '@/store'
 
   export interface IExample {

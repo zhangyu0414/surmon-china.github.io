@@ -9,7 +9,7 @@
   import { getComponentExampleMeta, getHomePageHeadMeta } from '@/transformers/page-meta'
   import { GITHUB_REPOSITORIEL_IDS } from '@/constants'
   import HomepageExamples, { IExample } from '@/components/homepage/examples.vue'
-  import Homepage from '@/components/homepage/index.vue'
+  import Homepage from '@/components/homepage/index.async'
 
   const repositorieId = GITHUB_REPOSITORIEL_IDS.VueDragZone
   const examples: IExample[] = []

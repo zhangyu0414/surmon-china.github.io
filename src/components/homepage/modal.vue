@@ -28,7 +28,7 @@
 <script lang="ts">
   import { defineComponent, computed } from 'vue'
   import Hljs from '@/services/highlight'
-  import Loading from './loading.vue'
+  import Loading from '../layout/loading.vue'
   import { useModalStore } from './modal-store'
 
   export default defineComponent({

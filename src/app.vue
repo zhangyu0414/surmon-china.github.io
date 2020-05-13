@@ -9,7 +9,7 @@
           <router-view />
         </template>
         <template #fallback>
-          Loading...
+          <loading />
         </template>
       </suspense>
     </transition>
@@ -19,9 +19,13 @@
 <script lang="ts">
   import { defineComponent, onBeforeMount } from 'vue'
   import { StoreNames, useStore } from './store'
+  import Loading from '@/components/layout/loading.vue'
 
   export default defineComponent({
     name: 'App',
+    components: {
+      Loading
+    },
     setup() {
       const store = useStore()
       onBeforeMount(() => {

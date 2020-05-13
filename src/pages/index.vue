@@ -192,7 +192,7 @@
   import BadgeNpmDownloads from '@/components/badge/download.vue'
   import BadgeLastCommit from '@/components/badge/last-commit.vue'
   import BadgeNpmVersion from '@/components/badge/version.vue'
-  import AnimatedNumber from '@/components/animated-number'
+  import AnimatedNumber from '@/components/widget/animated-number'
   import Mammon, { MammonProvider } from '@/components/mammon/index.vue'
   import CONSTANTS from '@/constants'
 

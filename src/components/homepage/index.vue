@@ -190,7 +190,7 @@
   import HomepageBasicCard from './card-basic.vue'
   import HomepageToolbox from './toolbox.vue'
   import HomepageModal from './modal.vue'
-  import Loading from './loading.vue'
+  import Loading from '../layout/loading.vue'
   import { provideModalStore } from './modal-store'
   import CONSTANTS from '@/constants'
 
