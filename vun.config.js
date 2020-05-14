@@ -17,6 +17,7 @@ module.exports = {
     ]
   },
   build: {
+    analyze: true,
     css: {
       sourceMap: true,
       styleResources: {
