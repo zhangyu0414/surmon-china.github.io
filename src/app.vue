@@ -28,6 +28,7 @@
     },
     setup() {
       const store = useStore()
+      // TODO: 时机 & NotPrerender
       onBeforeMount(() => {
         store.dispatch(StoreNames.Init)
       })
