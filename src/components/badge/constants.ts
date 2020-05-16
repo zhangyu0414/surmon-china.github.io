@@ -1,4 +1,3 @@
-
 export enum BadgeStyle {
   Normal = 'flat-square',
   Big = 'for-the-badge'

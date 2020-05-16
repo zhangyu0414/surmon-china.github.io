@@ -9,22 +9,25 @@
     "dev": "vun",
     "build": "vun build",
     "start": "http-server ./dist",
+    "test": "jest",
+    "test:watch": "jest --watch -i",
     "lint": "eslint --ext .js,.ts,.vue src"
   },
   "dependencies": {
-    "@vue/compiler-sfc": "^3.0.0-beta.10",
+    "@vue/compiler-sfc": "^3.0.0-beta.12",
     "axios": "^0.19.2",
     "bezier-easing": "^2.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "dedent": "^0.7.0",
-    "highlight.js": "^10.0.2",
+    "highlight.js": "^10.0.3",
     "naivebayes": "^0.5.0",
     "normalize.css": "^8.0.1",
+    "npm-check-updates": "^6.0.1",
     "quill-emoji": "^0.1.7",
     "quill-image-extend-module": "^1.1.2",
     "segmentit": "^2.0.3",
-    "swiper": "^5.3.8",
-    "vue": "^3.0.0-beta.10",
+    "swiper": "^5.4.0",
+    "vue": "^3.0.0-beta.12",
     "vue-awesome-swiper": "^4.1.1",
     "vue-codemirror": "^4.0.6",
     "vue-drag-zone": "^2.0.0-rc1",
@@ -37,11 +40,17 @@
     "vuex": "^4.0.0-beta.1"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^2.31.0",
-    "eslint": "^6.8.0",
+    "@types/jest": "^25.2.2",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/test-utils": "^2.0.0-alpha.4",
+    "babel-jest": "^26.0.1",
+    "eslint": "^7.0.0",
     "eslint-plugin-vue": "^7.0.0-alpha.1",
-    "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0",
-    "typescript": "^3.8.3"
+    "jest": "^26.0.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.2",
+    "vue-jest": "^5.0.0-alpha.0"
   }
 }

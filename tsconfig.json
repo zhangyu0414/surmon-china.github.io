@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "ES5",
+    "module": "ESNext",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "noImplicitAny": false,
@@ -21,11 +21,12 @@
       "dom.iterable"
     ],
     "paths": {
-      "~/*": ["./src/*"],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "~/*": ["./src/*"]
     },
     "types": [
       "node",
+      "jest",
       "./src/types"
     ]
   },
