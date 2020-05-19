@@ -7,7 +7,7 @@ module.exports = {
     routes: [
       '/',
       '/vuniversal',
-      // '/naivebayes',
+      '/naivebayes',
       // '/vue-awesome-swiper',
       // '/vue-quill-editor',
       // '/vue-video-player',
