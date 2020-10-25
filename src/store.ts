@@ -46,7 +46,7 @@ const state = () => ({
   inited: false
 })
 
-const store =  createStore<RootState>({
+const store = createStore<RootState>({
   state,
   getters: {
     [StoreNames.OwnRepositories](state): $TODO[] {
