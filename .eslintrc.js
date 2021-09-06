@@ -1,14 +1,37 @@
 module.exports = {
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    sourceType: 'module',
+    parser: '@typescript-eslint/parser',
+  },
+  plugins: ['@typescript-eslint/eslint-plugin', 'prettier'],
   extends: [
-    '@nuxtjs/eslint-config-typescript'
+    'plugin:vue/vue3-recommended',
+    'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
   ],
   rules: {
-    'vue/no-use-v-if-with-v-for': 'off',
+    'prettier/prettier': 'error',
+    'no-console': 0,
     'indent': 'off',
     'space-before-function-paren': 'off',
     'arrow-parens': 'off',
     'quotes': 'off',
     'import/order': 'off',
-    'no-console': 'off'
-  }
+    'vue/html-self-closing': 0,
+    'vue/no-v-html': 0,
+    'vue/valid-v-slot': 0,
+    'vue/valid-template-root': 0,
+    'vue/attributes-order': 0,
+    'vue/script-indent': 0,
+    'vue/no-use-v-if-with-v-for': 'off',
+    '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/no-non-null-assertion': 0,
+    '@typescript-eslint/explicit-module-boundary-types': 0,
+    '@typescript-eslint/ban-ts-comment': 0,
+    '@typescript-eslint/no-non-null-asserted-optional-chain': 0,
+    '@typescript-eslint/no-inferrable-types': 0,
+  },
 }

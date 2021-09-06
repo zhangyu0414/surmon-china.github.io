@@ -17,7 +17,7 @@
         :data="example"
         :key="example.name"
         :title="example.name"
-        v-for="example in examples" 
+        v-for="example in examples"
       >
         <component :is="example.name" />
       </homepage-example-card>

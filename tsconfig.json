@@ -1,34 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es2018",
+    "target": "esnext",
+    "useDefineForClassFields": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "lib": [
-      "esnext",
-      "esnext.asynciterable",
-      "dom"
-    ],
-    "esModuleInterop": true,
-    "allowJs": true,
-    "sourceMap": true,
     "strict": true,
-    "noEmit": true,
-    "baseUrl": ".",
+    "jsx": "react",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
     "paths": {
-      "~/": ["./"],
-      "~/*": ["./*"],
-      "~~/*": ["./*"],
-      "@": ["./"],
-      "@/*": ["./*"],
-      "@@/*": ["./*"]
+      "@/*": ["./src/*"],
+      "@base/*": ["./src/_base/*"],
     },
-    "types": [
-      "@types/node",
-      "@nuxt/types",
-      "./types"
-    ]
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
